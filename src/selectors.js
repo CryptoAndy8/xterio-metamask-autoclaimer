@@ -11,10 +11,9 @@ export async function clickFirstByText(page, substrings = [], tag = 'button') {
 }
 
 export async function tryConnectButton(page) {
-  // варіації під поширені UI: Connect Wallet / Connect / Sign in / Login
-  const keys = ['connect wallet', 'connect', 'sign in', 'login'];
+  // найчастіші варіанти
+  const keys = ['connect wallet', 'connect', 'sign in', 'sign-in', 'login', 'log in', 'authorize'];
   if (await clickFirstByText(page, keys, 'button')) return true;
-  // інколи це <a> або кастомний елемент
   if (await clickFirstByText(page, keys, 'a')) return true;
   return false;
 }
