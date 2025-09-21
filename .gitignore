@@ -1,12 +1,30 @@
 # deps
-node_modules
-package-lock.json
+node_modules/
 
-# secrets
+# !!! не ігноруємо lock-файл, його треба комітити
+# (нічого не пишемо про package-lock.json)
+
+# env & secrets
 .env
+*.env.local
 keys.txt
 tokens.txt
 
-# logs & cache
+# runtime/output
+logs/
 *.log
 tmp/
+playwright-report/
+test-results/
+trace.zip
+
+# браузерні профілі, що створює скрипт/ручний запуск
+.chrome-profile*/
+.manual_profile/
+.chrome_profile_tmp/
+
+# системне/IDE сміття
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
