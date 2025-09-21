@@ -1,2 +1,2 @@
-0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+# Один приватний ключ на рядок, без 0x або з 0x — як є.
+# Порожні рядки та коментарі (#...) ігноруються.
